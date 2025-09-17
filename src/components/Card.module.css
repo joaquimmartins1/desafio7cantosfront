@@ -1,0 +1,191 @@
+/* Estilos globais para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f2f5; /* Cor de fundo */
+}
+
+/* Contêiner de cards */
+.container-de-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Estilo do card */
+.card {
+  background-color: #fff;
+  width: 240px;
+  height: 270px; /* Ajustei a altura para o layout */
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px #aaaaaa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo da imagem do card */
+.card img {
+  width: 100%;
+  height: 130px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* Estilos para o conteúdo do card */
+.card-content {
+  padding: 10px;
+  flex-grow: 1; /* Permite que o conteúdo se expanda */
+}
+
+/* Estilos do valor e do botão */
+.container-valor-e-botao {
+  display: flex;
+  justify-content: space-between; /* Alinha o valor à esquerda e o botão à direita */
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Estilos do valor */
+.container-valor-e-botao span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5c9fda;
+}
+
+/* Estilo do ícone de coração */
+.coracao i {
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Estilo ao passar o mouse sobre o ícone */
+.coracao i:hover {
+  color: #ff0000;
+}
+
+/* Estilos para o título do card */
+.card h1 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Estilos para o subtítulo do card */
+.card h3 {
+  font-size: 255px;
+  color: #aaaaaa;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Estilos para as informações do card (quartos e banheiros) */
+.card-info {
+  display: flex;
+  justify-content: space-around; /* Distribui as informações uniformemente */
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+}
+
+/* Estilos dos ícones de quartos e banheiros */
+.icone {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo dos ícones (cor laranja) */
+.icone i {
+  color: #ff8c00; /* Cor dos ícones de quarto e banheiro */
+  font-size: 16px;
+}
+
+/* Estilo do texto dentro da icone (quartos, banheiros) */
+.icone h2, .icone h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+}
+.icone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555555;
+}
+/* ===== Estilo para filtro de busca e favoritos ===== */
+
+.filtro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-busca {
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1.8px solid #5c9fda;
+  width: 280px;
+  max-width: 100%;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: white;
+}
+
+.input-busca::placeholder {
+  color: #aaccee;
+  background-color: #f0f2f5;
+}
+
+.input-busca:focus {
+  border-color: #2f6fc1;
+  box-shadow: 0 0 8px #c12f2f;
+  background-color: white;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.checkbox-container input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #5c9fda;
+  border-radius: 4px;
+}
+.container-de-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
