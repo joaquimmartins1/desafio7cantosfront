@@ -6,8 +6,6 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App imovel={undefined} estaFavoritado={false} toggleFavorito={function (id: number): void {
-      throw new Error('Function not implemented.');
-    } } />
+    <App />
   </React.StrictMode>
 );
